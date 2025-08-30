@@ -20,9 +20,23 @@ const Data = () => {
             });
             setMessage('');
         } catch (e) {
-            console.log(e);
+            console.log(e)
             setMessage('Enter correct city name')
+
         }
+        // fetch(`${base_url}?q=${city}&appid=${api_key}&units=metric`)
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         setWeatherInfo({
+        //             city: data.name,
+        //             country: data.sys.country,
+        //             temp: data.main.temp,
+        //             pressure: data.main.pressure,
+        //             sunset: data.sys.sunset
+        //         });
+        //         setMessage('');
+        //     })
+        //     .catch(() => setMessage('Enter correct city name'));
     }
 
     return (
